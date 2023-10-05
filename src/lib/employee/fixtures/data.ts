@@ -1,15 +1,41 @@
-import { EmployeeRow } from "../types";
+// import { EmployeeRow } from "../types";
+// import Papa from "papaparse";
+// // import csvData from "./";
 
-export const tableData: EmployeeRow[] = [
-  ["Greg Black", 4.66, "=B1*1.3", "=AVERAGE(B1:C1)", "=SUM(B1:C1)"],
-  ["Anne Carpenter", 5.25, "=$B$2*30%", "=AVERAGE(B2:C2)", "=SUM(B2:C2)"],
-  ["Natalie Dem", 3.59, "=B3*2.7+2+1", "=AVERAGE(B3:C3)", "=SUM(B3:C3)"],
-  ["John Sieg", 12.51, "=B4*(1.22+1)", "=AVERAGE(B4:C4)", "=SUM(B4:C4)"],
-  [
-    "Chris Aklips",
-    7.63,
-    "=B5*1.1*SUM(10,20)+1",
-    "=AVERAGE(B5:C5)",
-    "=SUM(B5:C5)"
-  ]
-];
+// const tableData: EmployeeRow[] = [];
+
+// async function GetData() {
+// 	Papa.parse("data/benchmark_data_1.csv", {
+// 		// header: false,
+// 		// skipEmptyLines: true,
+// 		dynamicTyping: true,
+// 		download: true,
+// 		// step: (row) => {
+// 		//     console.log("Row:", row.data);
+// 		// }
+// 		complete: (result) => {
+// 			console.log("result", result);
+// 			if (result.data && result.data.length > 0) {
+// 				result.data.forEach((row: any) => {
+// 					const newRow: EmployeeRow = row;
+// 					tableData.push(newRow);
+// 				});
+// 			}
+// 			console.log("tableData.length 2", tableData.length);
+// 		},
+// 	});
+// 	// console.log("tableData.length", tableData.length);
+// 	// return tableData.slice(0, 10);
+// }
+
+// async function fetchCsv() {
+// 	const response = await fetch("data/benchmark_data_1.csv");
+// 	const reader = response.body?.getReader();
+// 	const result = await reader?.read();
+// 	const decoder = new TextDecoder("utf-8");
+// 	const csv = await decoder.decode(result?.value);
+// 	console.log(csv.length);
+// 	return csv;
+// }
+
+// export { GetData, tableData };
